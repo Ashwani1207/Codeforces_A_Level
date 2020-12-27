@@ -17,11 +17,11 @@ int main()
         {
             if (h[i] == g[j])
             {
-                number += 1;
+                count += 1;
             }
             if (g[i] == h[j])
             {
-                number += 1;
+                count += 1;
             }
         }
     }
