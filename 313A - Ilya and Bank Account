@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    
+    long long b;
+    cin>>b;
+    if(b>0)
+    cout<<b<<endl;
+    else
+    {
+        long m=-(b%10);
+        b=b+m;
+        long num=b/10;
+        long n=-(num%10);
+        //long n=num/10;
+        long nn=num+n;
+        nn=nn-m;
+        if(num==0||nn==0)
+        cout<<0<<endl;
+        else if(num>nn)
+        cout<<num<<endl;
+        else
+        cout<<nn<<endl;
+        
+        
+    }
+    return 0;
+}
